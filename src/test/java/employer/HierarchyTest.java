@@ -65,5 +65,4 @@ public class HierarchyTest {
         display.display(topManagers);
 
     }
-
 }

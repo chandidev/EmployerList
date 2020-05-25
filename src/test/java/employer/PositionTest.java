@@ -26,5 +26,4 @@ public class PositionTest {
         assertTrue(managerPosition.getStaff().contains(staff1Posisition));
         assertTrue(managerPosition.getStaff().contains(staff2Posision));
     }
-
 }

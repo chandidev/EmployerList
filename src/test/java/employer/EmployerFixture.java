@@ -35,5 +35,4 @@ public class EmployerFixture {
     public static Employer createEmployer(String name, Integer id, Integer managerId) {
         return new Employer(name, id, managerId);
     }
-
 }

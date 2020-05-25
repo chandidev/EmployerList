@@ -40,5 +40,4 @@ public class Position {
         return staff;
     }
 
-
 }
