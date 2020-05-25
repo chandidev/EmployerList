@@ -11,4 +11,3 @@ The Heirachy class handles null or blank lists.
 Employers without managers, Employers with Managers who are not in the Employer list are considered as top level managers since no requirement in that area provided.
 
 Duplicate record checks are not done.
-
