@@ -11,7 +11,9 @@ public class HierarchyDisplay {
     private static String INDENT = "  ";
 
     public void display(List<Position> topManagerList) {
-
+        display("------------------ result start ------------------");
+        displayRecursively(topManagerList, 0);
+        display("------------------ result end ------------------");
     }
 
     private void displayRecursively(List<Position> positions, int level) {
@@ -25,7 +27,7 @@ public class HierarchyDisplay {
 
 
     private String getIndentation(int level) {
-        String.join("", Collections.nCopies(level, INDENT));
+        return String.join("", Collections.nCopies(level, INDENT));
     }
 
     private void display(String str) {

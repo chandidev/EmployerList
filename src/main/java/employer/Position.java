@@ -14,32 +14,31 @@ import java.util.Set;
  */
 public class Position {
     private Employer employer;
-    private Employer manager;
-    private List<Employer> staff;
+    private Position manager;
+    private List<Position> staff;
 
     public Position(Employer employer) {
         this.employer = employer;
-        this.staff = new ArrayList<Employer>();
+        this.staff = new ArrayList<Position>();
     }
 
     public Employer getEmployer() {
         return this.employer;
     }
 
-    public Employer getManager() {
+    public Position getManager() {
         return manager;
     }
 
-    public void setManager(Employer manager) {
+    public void setManager(Position manager) {
         this.manager = manager;
+        this.manager.staff.add(this);
+
     }
 
-    public List<Employer> getStaff() {
+    public List<Position> getStaff() {
         return staff;
     }
 
-    public void addStaff(Employer employer) {
-        this.staff.add(employer);
-    }
 
 }
